@@ -95,6 +95,8 @@ namespace Part2
                             {
                                 throw new Exception($"{values[4]} was not able to be parsed to a double.");
                             }
+                            
+
                             if (!states.Contains(values[2]))
                             {
                                 throw new Exception($"State code {values[2]} is not a valid state abbreviation.");
@@ -122,7 +124,7 @@ namespace Part2
                         };
                         employees.Add(employee);
                     }
-                   
+                    Console.WriteLine("---------------------");
                 }
             }
             catch(Exception e)

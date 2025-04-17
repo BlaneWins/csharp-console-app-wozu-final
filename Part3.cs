@@ -70,11 +70,11 @@ namespace Part3
                         string order = Console.ReadLine();
                         switch (order.ToUpper())
                         {
-                            case ("A"): FinalQuery = ColumnQuery; break;             // Set FinalQuery
-                                                                                     // To normal order here
-                                                                                     // - break out of the switch
-                            case ("D"): FinalQuery = ColumnQuery.Reverse(); break;   // Set FinalQuery to the reverse here
-                                                                                     // - break out of the switch
+                            case ("A"): FinalQuery = ColumnQuery;Console.WriteLine("---------------------");break;   // Set FinalQuery
+                                                                                                                    // To normal order here
+                                                                                                                    // - break out of the switch
+                            case ("D"): FinalQuery = ColumnQuery.Reverse();Console.WriteLine("---------------------");break;                       // Set FinalQuery to the reverse here
+                                                                                                                                                    // - break out of the switch
                             default:
                                 Console.WriteLine("Choice not recognized, try again...");
                                 continue;  // this continue is for the inner do (ascending or descending)
@@ -87,7 +87,7 @@ namespace Part3
                     {
                         try
                         {
-                            Console.WriteLine(r);
+                            Console.WriteLine(r + "\n");
                         }
                         catch (Exception ex)  // to catch the exceptions when calculating the tax,
                                               //  and go to the next since it is within the foreach

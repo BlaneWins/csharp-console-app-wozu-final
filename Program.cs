@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_Project
+
+
+namespace TaxCalculatorApp
 {
     class Program
     {
-        public static void Main()
-        {
-            //Part1.Program.Main();
+        static void Main(string[] args)
+        { 
+            Part1.Program.Main();
             //Part2.Program.Main();
-            Part3.Program.Main();
+            //Part3.Program.Main();
 
         }
     }

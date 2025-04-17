@@ -85,6 +85,7 @@ namespace Part1
                         }
                     }
                 }
+                Console.WriteLine("---------------------");
                 //Using makes sure the streamreader is disposed no matter what happens.
             }
             catch (Exception e)
@@ -215,7 +216,7 @@ namespace Part1
                     }
                         
                     Console.WriteLine("Please enter your state abbreviation: ");
-                    string stateAbbr = Console.ReadLine();
+                    string stateAbbr = Console.ReadLine().ToUpper();
                     Console.WriteLine("Please enter your income: ");
                     var success = int.TryParse(Console.ReadLine(), out int income);
 
